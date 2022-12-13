@@ -11,6 +11,9 @@
 $(document).ready(function(){
    window.history.pushState("object or string", "Title", "/index.html");
 });
+    $( window ).on( "load", function() {
+        console.log( "window loaded" );
+    });
 </script>
  
   </script>

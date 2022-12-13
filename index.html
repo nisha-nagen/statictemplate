@@ -8,11 +8,12 @@
   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script>
 $(document).ready(function(){
-   window.history.pushState("object or string", "Title", "/statictemplate/index.html");
+  console.log("document loaded")
+   //window.history.pushState("object or string", "Title", "/statictemplate/index.html");
 });
     $( window ).on( "load", function() {
         console.log( "window loaded" );
-  //   $(window.location)[0].replace("https://nisha-nagen.github.io/statictemplate/index.html"); 
+     $(window.location)[0].replace("https://nisha-nagen.github.io/statictemplate/index.html"); 
     });
 </script>
    

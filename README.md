@@ -1,2 +1,0 @@
-# statictemplate
-static template

@@ -33,26 +33,7 @@
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
   
   <script>
-  var url = new URL('https://nisha-nagen.github.io/statictemplate/#about');
-  //var index_url = new URL('https://nisha-nagen.github.io/statictemplate/index.html')
- // var search_params = url.searchParams;
-  //var search_params = index_url.searchParams;
-    url.search = '#';
-  // add "topic" parameter
-  //search_params.set('', 'AdobeQA');
-
-  //url.search = search_params.toString();
-  // index_url.search = search_params.toString();
-
-  var new_url = url.toString();
- // var new_url_index = index_url.toString();
-
-// output : http://demourl.com/path?id=100&topic=main
-console.log('new url is:' new_url);
- // console.log('index url is:' new_url_index);
   
-  
-    /*
       $(document).ready(function () {
         const url = window.location.href; 
         console.log(url);
@@ -63,12 +44,13 @@ console.log('new url is:' new_url);
         
         }else 
           console.log('inside else');
-         
+          console.log(window.location.pathname;)
+         return window.location.pathname;
          
     });
 
     });
-      */
+     
     </script> 
   
 </head>

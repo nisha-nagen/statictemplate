@@ -33,23 +33,23 @@
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
   
   <script>
-  var url = new URL('https://nisha-nagen.github.io/statictemplate/');
-  var index_url = new URL('https://nisha-nagen.github.io/statictemplate/index.html')
+  var url = new URL('https://nisha-nagen.github.io/statictemplate/#about');
+  //var index_url = new URL('https://nisha-nagen.github.io/statictemplate/index.html')
   var search_params = url.searchParams;
-  var search_params = index_url.searchParams;
+  //var search_params = index_url.searchParams;
     
   // add "topic" parameter
-  search_params.set('', 'main');
+  search_params.set('', 'AdobeQA');
 
   url.search = search_params.toString();
-   index_url.search = search_params.toString();
+  // index_url.search = search_params.toString();
 
   var new_url = url.toString();
-  var new_url_index = index_url.toString();
+ // var new_url_index = index_url.toString();
 
 // output : http://demourl.com/path?id=100&topic=main
 console.log('new url is:' new_url);
-  console.log('index url is:' new_url_index);
+ // console.log('index url is:' new_url_index);
   
   
     /*

@@ -33,14 +33,25 @@
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
   
     <script>
-     // $(document).ready(function () {
-
-         $('a.changeurl').click(function () {
+      $(document).ready(function () {
+      
+        $('a').on('click', function(e){
+        if($(this).hasClass('changeurl')) {
+          console.log("change url on click about");
+            window.history.pushState('object or string', 'title', '/AdobeQA');
+        } else {
+            e.preventDefault();
+            //setLocation($(this).attr('href'));
+        }
+            return false;
+    });
+        /*
+        $('a.changeurl').click(function () {
             console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/AdobeQA');
-         });
+         });*/
 
-    //});
+    });
       
     </script> 
   

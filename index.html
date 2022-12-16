@@ -32,8 +32,8 @@
   
     <script>
         function addState() {
-            let stateObj = { id: "100" };
-            window.history.pushState(stateObj, "AdobeQA", "?AdobeQA");
+            
+            window.location.pushState("object or String", "AdobeQA", "?AdobeQA");
         }
       
         function clickAbout() {

@@ -35,13 +35,13 @@
   <script>
   var url = new URL('https://nisha-nagen.github.io/statictemplate/#about');
   //var index_url = new URL('https://nisha-nagen.github.io/statictemplate/index.html')
-  var search_params = url.searchParams;
+ // var search_params = url.searchParams;
   //var search_params = index_url.searchParams;
-    
+    url.search = '';
   // add "topic" parameter
-  search_params.set('', 'AdobeQA');
+  //search_params.set('', 'AdobeQA');
 
-  url.search = search_params.toString();
+  //url.search = search_params.toString();
   // index_url.search = search_params.toString();
 
   var new_url = url.toString();

@@ -33,7 +33,7 @@
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
   
     <script>
-      window.location.reload=window.location.orifin
+      window.location.reload=window.location.origin;
      // $(document).ready(function () {
       
         $('#myNavbar a').on('click', function(e){
@@ -41,8 +41,9 @@
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
         
-        }
-          //window.history.back();
+        }else 
+          console.log(window.location.href);
+          return window.location.href;
          
    // });
         /*

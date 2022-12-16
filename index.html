@@ -40,13 +40,14 @@
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/AdobeQA');
         
-        }
+        } else{
           // Revert to a previously saved state
           window.addEventListener('popstate', function(event) {
             console.log('popstate fired!');
 
             updateContent(event.state);
         });
+        }
     });
         /*
         $('a.changeurl').click(function () {

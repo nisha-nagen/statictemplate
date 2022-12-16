@@ -33,24 +33,19 @@
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
   
     <script>
-      window.location.reload=window.location.origin;
-     // $(document).ready(function () {
-      
+      $(document).ready(function () {
+        const url = window.location.href; 
+        console.log(url);
         $('#myNavbar a').on('click', function(e){
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
         
         }else 
-          console.log(window.location.href);
-          return window.location.href;
+          console.log('inside else');
          
-   // });
-        /*
-        $('a.changeurl').click(function () {
-            console.log("change url on click about");
-            window.history.pushState('object or string', 'title', '/AdobeQA');
-         });*/
+         
+    });
 
     });
       

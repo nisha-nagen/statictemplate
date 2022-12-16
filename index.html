@@ -35,15 +35,13 @@
     <script>
       $(document).ready(function () {
       
-        $('a').on('click', function(e){
+        $('#myNavbar a').on('click', function(e){
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/AdobeQA');
         } else {
-            e.preventDefault();
-            //setLocation($(this).attr('href'));
+                       return false;
         }
-            return false;
     });
         /*
         $('a.changeurl').click(function () {

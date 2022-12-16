@@ -27,3 +27,13 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+ function addState() {
+            window.history.pushState('object or string', 'title', '/statictemplate/#about?AdobeQA');
+           // window.history.pushState("object or String", "AdobeQA", "?AdobeQA");
+        }
+
+function clickAbout() {
+           toggleFunction(); addState();
+          
+        }

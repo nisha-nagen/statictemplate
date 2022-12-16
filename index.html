@@ -32,7 +32,27 @@
     </script> 
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
   
-    <script>
+  <script>
+  var url = new URL('https://nisha-nagen.github.io/statictemplate/');
+  var index_url = new URL('https://nisha-nagen.github.io/statictemplate/index.html')
+  var search_params = url.searchParams;
+  var search_params = index_url.searchParams;
+    
+  // add "topic" parameter
+  search_params.set('', 'main');
+
+  url.search = search_params.toString();
+   index_url.search = search_params.toString();
+
+  var new_url = url.toString();
+  var new_url_index = index_url.toString();
+
+// output : http://demourl.com/path?id=100&topic=main
+console.log(new_url);
+  console.log(new_url_index);
+  
+  
+    /*
       $(document).ready(function () {
         const url = window.location.href; 
         console.log(url);
@@ -48,7 +68,7 @@
     });
 
     });
-      
+      */
     </script> 
   
 </head>

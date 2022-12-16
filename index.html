@@ -33,6 +33,7 @@
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
   
     <script>
+      
       $(document).ready(function () {
       
         $('#myNavbar a').on('click', function(e){
@@ -46,8 +47,10 @@
             console.log('popstate fired!');
 
             updateContent(event.state);
+        
         });
         }
+          window.history.replaceState('page', '');
     });
         /*
         $('a.changeurl').click(function () {

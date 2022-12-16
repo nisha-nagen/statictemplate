@@ -41,7 +41,7 @@
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
         
-        } else{
+        } /*else{
           // Revert to a previously saved state
           window.addEventListener('popstate', function(event) {
             console.log('popstate fired!');
@@ -49,7 +49,7 @@
             updateContent(event.state);
         
         });
-        }
+        }*/
           //window.history.back();
          window.location.reload();
     });

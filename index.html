@@ -37,7 +37,7 @@
       $(document).ready(function () {
         const url = window.location.href; 
         console.log(url);
-        $('a href').on('click', function(e){
+        $('#myNavbar a').on('click', function(e){
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');

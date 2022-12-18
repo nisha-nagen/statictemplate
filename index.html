@@ -41,9 +41,13 @@
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
-          window.history.pushState(null, "", window.location.href);
-        window.onpopstate = function () {
-        window.history.pushState(null, "", window.location.href);
+             function preventBack() {
+                window.history.forward(); 
+               console.log('inside preventback');
+             }
+          setTimeout("preventBack()", 0);
+           window.onunload = function () { null };
+          
         }else {
           console.log('inside else');
           //console.log(window.location.pathname);

@@ -35,16 +35,18 @@
   <script>
   
       $(document).ready(function () {
-        const url = window.location.href; 
-        console.log(url);
+       // const url = window.location.href; 
+        //console.log(url);
         $('#myNavbar a').on('click', function(e){
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
-        
+          window.history.pushState(null, "", window.location.href);
+        window.onpopstate = function () {
+        window.history.pushState(null, "", window.location.href);
         }else {
           console.log('inside else');
-          console.log(window.location.pathname);
+          //console.log(window.location.pathname);
         var replace_url =  history.pushState(null, null, url.replace(/AdobeQA/, '.'));
           console.log(replace_url);
           return replace_url;

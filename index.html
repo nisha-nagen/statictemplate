@@ -41,6 +41,10 @@
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
+            window.onpopstate = function () {
+              console.log("inside popstate");
+               window.history.go(1);
+              };
     }else {
           console.log('inside else');
           console.log(window.location.pathname);

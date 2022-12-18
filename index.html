@@ -36,7 +36,7 @@
   
       $(document).ready(function () {
        const url = window.location.href; 
-        //console.log(url);
+        console.log(url);
         $('#myNavbar a').on('click', function(e){
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
@@ -45,7 +45,7 @@
           console.log('inside else');
           //console.log(window.location.pathname);
           var replace_url =  history.pushState(null, null, url.replace(/AdobeQA/, ''));
-          console.log("Replaced url' +replace_url);
+          console.log("Replaced url: ' replace_url);
           return replace_url;
           
         }

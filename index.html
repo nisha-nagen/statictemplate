@@ -43,8 +43,8 @@
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
     }else {
           console.log('inside else');
-          //console.log(window.location.pathname);
-          var replace_url =  history.pushState(null, null, url.replace(/AdobeQA/, ''));
+          console.log(window.location.pathname);
+          var replace_url =  history.pushState(null, null, url.replace(/AdobeQA/, '.'));
           console.log("Replaced url: ' replace_url);
           return replace_url;
           

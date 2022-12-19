@@ -45,10 +45,9 @@
               console.log("inside popstate");
                window.history.go(1);
               };
-          
-       
+         
           window.onbeforeunload =function () {
-            if (url.searchParams.has('AdobeQA')) {
+            if(url.searchParams.has('AdobeQA')) {
                console.log('disable refresh button');
                 window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
               console.log('if condition inside onbefore');

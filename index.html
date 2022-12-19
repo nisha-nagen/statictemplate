@@ -51,11 +51,11 @@
                   setTimeout(function(){
                      test = 2;
                    },500)
-                  return "If you leave this page, data may be lost.";
+                  window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
                  }
                 setInterval(function(){
                   if (test === 2) {
-                   alert("redirect here!");
+                   console.log("redirect here!");
                    test = 3; // kill interval! just for this test
                     }
                 },50);

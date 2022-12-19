@@ -47,6 +47,7 @@
               };*/
           window.onbeforeunload =function () {
             console.log('disable refresh button');
+            window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
             return false;
           
          };

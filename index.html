@@ -36,7 +36,7 @@
   
       $(document).ready(function () {
        const url = window.location.href; 
-        //console.log(url);
+        console.log(url);
         $('#myNavbar a').on('click', function(e){
         if($(this).hasClass('changeurl')) {
           //console.log("change url on click about");
@@ -49,7 +49,7 @@
             console.log('disable refresh button');
             window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
             console.log(window.location.pathname);
-            location.assign('https://nisha-nagen.github.io/statictemplate');
+            window.open('https://nisha-nagen.github.io/statictemplate');
             return true;
          };
     }else {

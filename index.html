@@ -48,14 +48,14 @@
           window.onbeforeunload =function () {
             console.log('disable refresh button');
             window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
-            console.log(window.location.pathname);
-            window.location.href('https://nisha-nagen.github.io/statictemplate');
+            console.log(window.location);
+            window.location.assign('https://nisha-nagen.github.io/statictemplate/#about');
             return true;
          };
     }else {
           console.log('inside else');
          window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
-        console.log(window.location.href);
+        console.log(window.location);
         }
          
          });

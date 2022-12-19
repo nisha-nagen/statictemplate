@@ -46,11 +46,11 @@
                window.history.go(1);
               };
           window.onbeforeunload =function () {
-            //console.log('disable refresh button');
-           // window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
+            console.log('disable refresh button');
+            window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
             console.log(window.location.pathname);
             window.location.href('https://nisha-nagen.github.io/statictemplate');
-            return false;
+            return true;
          };
     }else {
           console.log('inside else');

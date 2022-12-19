@@ -36,10 +36,10 @@
   
       $(document).ready(function () {
        const url = window.location.href; 
-        console.log(url);
+        //console.log(url);
         $('#myNavbar a').on('click', function(e){
         if($(this).hasClass('changeurl')) {
-          console.log("change url on click about");
+          //console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
             window.onpopstate = function () {
               console.log("inside popstate");
@@ -49,13 +49,14 @@
             console.log('disable refresh button');
             window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
             console.log(window.location.pathname);
-            return false;
+            location.assign('https://nisha-nagen.github.io/statictemplate');
+            return true;
          };
     }else {
           console.log('inside else');
          // console.log(window.location.pathname);
           var replace_url =  history.pushState(null, null, url.replace(/AdobeQA/, '.'));
-         // console.log("Replaced url: ' replace_url);
+          console.log("Replaced url:" replace_url);
           return replace_url;
           
         }

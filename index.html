@@ -45,13 +45,27 @@
               console.log("inside popstate");
                window.history.go(1);
               };
-          window.onbeforeunload =function () {
+          
+                var test = 1;
+                 window.onbeforeunload = function(){
+                  setTimeout(function(){
+                     test = 2;
+                   },500)
+                  return "If you leave this page, data may be lost.";
+                 }
+                setInterval(function(){
+                  if (test === 2) {
+                   alert("redirect here!");
+                   test = 3; // kill interval! just for this test
+                    }
+                },50);
+         /* window.onbeforeunload =function () {
             console.log('disable refresh button');
             window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
             console.log(window.location);
             window.location.assign('https://nisha-nagen.github.io/statictemplate/#about');
             return true;
-         };
+         };*/
     }else {
           console.log('inside else');
          window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));

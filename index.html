@@ -41,15 +41,14 @@
         if($(this).hasClass('changeurl')) {
           console.log("change url on click about");
             window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
-            /*window.onpopstate = function () {
+            window.onpopstate = function () {
               console.log("inside popstate");
                window.history.go(1);
-              };*/
+              };
           window.onbeforeunload =function () {
             console.log('disable refresh button');
             window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
-            return false;
-          
+            return true;
          };
     }else {
           console.log('inside else');

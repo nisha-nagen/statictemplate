@@ -54,11 +54,8 @@
          };
     }else {
           console.log('inside else');
-         // console.log(window.location.pathname);
-          var replace_url =  history.pushState(null, null, url.replace(/AdobeQA/, '.'));
-          console.log(replace_url);
-          return replace_url;
-          
+         window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
+        console.log(window.location.pathname);
         }
          
          });

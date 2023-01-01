@@ -31,49 +31,6 @@
         (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
     </script> 
     <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
-  
- <!-- <script>
-  
-      $(document).ready(function () {
-       const url = window.location.href; 
-       console.log(url);
-        $('#myNavbar a').on('click', function(e){
-        if($(this).hasClass('changeurl')) {
-          //console.log("change url on click about");
-            window.history.pushState('object or string', 'title', '/statictemplate/AdobeQA');
-            window.onpopstate = function () {
-              console.log("inside popstate");
-               window.history.go(1);
-              };
-         
-          window.onbeforeunload =function () {
-            if(url.searchParams.has('AdobeQA')) {
-               console.log('disable refresh button');
-                window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
-              console.log('if condition inside onbefore');
-              return true;
-            } else {
-              window.location.assign('https://nisha-nagen.github.io/statictemplate/#about');
-              console.log('inside else of onbefore')
-              return true;
-            }
-           
-           /* console.log(window.location);
-            window.location.assign('https://nisha-nagen.github.io/statictemplate/#about');
-            return true;*/
-         };
-    }else {
-          console.log('inside else');
-         window.history.pushState(null, null, url.replace(/AdobeQA/, '.'));
-        console.log(window.location.href);
-        }
-         
-         });
-
-      });
-     
-    </script> -->
-  
 </head>
 <body>
 
@@ -85,7 +42,7 @@
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small changeurl"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#AdobeQA" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -95,7 +52,7 @@
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button changeurl" onclick="toggleFunction()">ABOUT</a>
-    <a href="#AdobeQA" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -170,7 +127,7 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="AdobeQA">
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 

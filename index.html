@@ -17,13 +17,14 @@
   
    <!--Data Layer to enable rich data collection and targeting-->
     <script>
+     var memberLevel=['','Gold','Silver'];
     var digitalData = {
         "page": {
             "isLoggedIn":true,
+          "memberLevel":memberLevel[Math.floor((Math.random() * 3))]
             "pageInfo" : {
                 "pageName": "Home",
-                "typeOfMember":"Gold",
-                "memberType":"Silver",
+                //"memberType":"Silver",
                 "orderId":123,
                 "cartTotal":5000
                 }

@@ -15,6 +15,38 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/mystyle.css">
 
+  <script>
+  
+     var memberLevel=['','Gold','Silver'];
+    var digitalData = {
+        "page": {
+            "isLoggedIn":true,
+          "memberLevel":memberLevel[Math.floor((Math.random() * 3))],
+            "pageInfo" : {
+                "pageName": "Home",
+                //"memberType":"Silver",
+                "orderId":123,
+                "cartTotal":5000
+                }
+            },
+          "cart":{
+            "cartEntries" : {
+              "p1" : 1,
+              "p2" : 3,
+              "p3" : 5
+            }
+          }
+    };
+      
+ targetPageParamsAll = function() { 
+  return { 
+    "profile": { 
+        "memberLevel": memberLevel[Math.floor((Math.random() * 3))] 
+      }    
+  }; 
+}; 
+
+  </script>
 
     <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
     <script>

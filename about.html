@@ -15,39 +15,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/mystyle.css">
 
-  <script>
-  
-     var memberLevel=['','Gold','Silver'];
-    var digitalData = {
-        "page": {
-            "isLoggedIn":true,
-          "memberLevel":memberLevel[Math.floor((Math.random() * 3))],
-            "pageInfo" : {
-                "pageName": "Home",
-                //"memberType":"Silver",
-                "orderId":123,
-                "cartTotal":5000
-                }
-            },
-          "cart":{
-            "cartEntries" : {
-              "p1" : 1,
-              "p2" : 3,
-              "p3" : 5
-            }
-          }
-    };
-      
- targetPageParamsAll = function() { 
-  return { 
-    "profile": { 
-        "memberLevel": memberLevel[Math.floor((Math.random() * 3))] 
-      }    
-  }; 
-}; 
-
-  </script>
-
     <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
     <script>
       (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);

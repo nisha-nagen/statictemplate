@@ -91,11 +91,11 @@
             </div>
           </div>
           <input class="w3-input w3-border" type="text" placeholder="Message" name="Message">-->
-          <!-- <a href="./home.html">-->
-          <button class="w3-button w3-black w3-right w3-section" type="submit" id="submit">
+           <a href="./home.html">
+          <button class="w3-button w3-black w3-right w3-section" id="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
-        <!--  </a> -->
+         </a> 
         </form>
       </div>
     </div>
@@ -118,7 +118,7 @@
             document.getElementById('submit').onclick=function(){
 						window.custId = document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
 						document.cookie = "customerId="+custId+"";
-						document.getElementById('myNavbar').getElementsByTagName('a')[1].click();
+						//document.getElementById('myNavbar').getElementsByTagName('a')[1].click();
 					}
   </script>
 

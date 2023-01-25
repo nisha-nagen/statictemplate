@@ -84,7 +84,7 @@
         <form>
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Customer ID" required name="custID" id="customerId">
+              <input class="w3-input w3-border" type="text" placeholder="Customer ID" required name="custId" id="customerId">
             </div>
            <!-- <div class="w3-half">
               <input class="w3-input w3-border" type="text" placeholder="Email" name="Email">
@@ -115,7 +115,7 @@
 
   <script src="js/myscript.js"></script>
   <script>
-            document.getElementById('submit').onclick=function(){
+            				document.getElementById('submit').onclick=function(){
 						window.custId = document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
 						document.cookie = "customerId="+custId+"";
 						//document.getElementById('myNavbar').getElementsByTagName('a')[1].click();

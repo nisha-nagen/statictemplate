@@ -18,7 +18,8 @@
    <!--Data Layer to enable rich data collection and targeting-->
     <script>
      var memberLevel=['','Gold','Silver'];
-    var digitalData = {
+      var digitalData =  digitalData || {};
+    digitalData = {
         "page": {
             "isLoggedIn":"logged in",
           "member_nn":"Gold",

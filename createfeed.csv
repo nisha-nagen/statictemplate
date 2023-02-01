@@ -5,5 +5,5 @@
 ## RECSThe last 100 columns (entity.custom1 - entity.custom100) are custom. The name 'customN' can be replaced with a custom name such as 'onSale' or 'brand'.,,,,,,,,,,,,,,,,,,,
 ## RECSIf the products already exist in Recommendations then changes uploaded here will override the data in Recommendations. Any new attributes entered here will be added to the product''s entry in Recommendations.,,,,,,,,,,,,,,,,,,,
 ## RECSentity.id,entity.name,entity.categoryId,entity.message,entity.thumbnailUrl,entity.value,entity.pageUrl,entity.inventory,entity.margin,entity.custom1,entity.custom2,entity.custom3,entity.custom4,entity.custom5,entity.custom6,entity.custom7,entity.custom8,entity.custom9,entity.custom10,...
-nnproduct1,mountains,portfolio images,The mist over the mountains,https://nisha-nagen.github.io/statictemplate/images/p1.jpg,,,,,,,,,,,,,,,
-nnproduct2,bear,portfolio images,Bear closeup,https://nisha-nagen.github.io/statictemplate/images/p3.jpg,,,,,,,,,,,,,,,
+nnproduct1,mountains,portfolio images,The mist over the mountains,https://unsplash.com/photos/SJGiS1JzUCc,,https://unsplash.com/images/nature/mountain,,,,,,,,,,,,,
+nnproduct2,bear,portfolio images,Bear closeup,https://unsplash.com/photos/qQWV91TTBrE,,https://unsplash.com/images/animals/bear,,,,,,,,,,,,,

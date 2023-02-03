@@ -48,8 +48,8 @@ targetPageParamsAll = function() {
  }; 
 }; 
 
-$('footer a#mountains').click(function(event){ 
-   var pf = window.location.href;
+$('footer a#mountains').click(function(event){
+     var pf = window.location.href;
     var eid;
     var categoryId;
     if(pf.indexOf('1111.html')>-1){
@@ -69,8 +69,10 @@ $('footer a#mountains').click(function(event){
     'params':{
       'profile.nnentityid':eid,
       'profile.nncategoryid':categoryId
+    }
     }); 
-  })
+
+})
 
   </script>
   

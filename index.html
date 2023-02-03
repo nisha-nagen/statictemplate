@@ -48,53 +48,31 @@ targetPageParamsAll = function() {
  }; 
 }; 
 
+$('footer a#mountains').click(function(event){ 
+   var pf = window.location.href;
+    var eid;
+    var categoryId;
+    if(pf.indexOf('1111.html')>-1){
+    eid=1111;
+   categoryId= 'portfolio images1';
+    }
+    if(pf.indexOf('2222.html')>-1){
+    eid=2222;
+   categoryId= 'portfolio images2';
+    }
+    if(pf.indexOf('3333.html')>-1){
+    eid= 3333;
+    categoryId= 'portfolio images3';
+    }
+  adobe.target.trackEvent({
+    'mbox':'target-global-mbox',
+    'params':{
+      'profile.nnentityid':eid,
+      'profile.nncategoryid':categoryId
+  }) 
+}); 
 
-/*
-$(document).ready( function() {
-  $("#about").click(function(e){
-    $.get('about.html', function(data) {
-        $("#content").html(data);
-    });
-  }),
-  $("#contact").click(function(e){
-    $.get('contact.html', function(data) {
-        $("#content").html(data);
-    });
-  }),
-  $("#portfolio").click(function(e){
-    $.get('portfolio.html', function(data) {
-        $("#content").html(data);
-    });
-  }),
-  $("#home").click(function(e){
-    if($("#content").empty()){
-      $.get('home.html', function(data) {
-        $("#content").html("");
-    })
-    }else{
-      // $("#content").html(" ");
-      $.get('home.html', function(data) {
-        $("#content").html(data);
-    })
-    }
-    // $.get('home.html', function(data) {
-    //     $("#content").html(data);
-    // });
-  }),
-  $("#tothetop").click(function(e){
-    if($("#content").empty()){
-      $.get('home.html', function(data) {
-        $("#content").html("");
-    })
-    }else{
-      $("#content").html(" ");
-      $.get('home.html', function(data) {
-        $("#content").html(data);
-    })
-    }
-  });
-});*/
-    </script>
+  </script>
   
     <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
     <script>

@@ -15,18 +15,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/mystyle.css">
 
-	<script>
-     var memberLevel=['','Gold','Silver'];
-    
- targetPageParamsAll = function() { 
-  return { 
-    "profile": { 
-        "member_nn": "Gold"
-      //memberLevel[Math.floor((Math.random() * 3))] 
-      }    
-  }; 
-}; 
-	</script>
 
     <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
     <script>
@@ -91,23 +79,21 @@
           <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
         </div>
         <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-       <!-- <form action="/action_page.php" target="_blank"> -->
-          <form action = "./home.html">
-     
+        <form action = "./home.html">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Customer ID" required name="custId" id="customerId">
+              <input class="w3-input w3-border" type="text" placeholder="Customer ID" required name="custID" id="customerId">
             </div>
-           <!-- <div class="w3-half">
+            <!-- <div class="w3-half">
               <input class="w3-input w3-border" type="text" placeholder="Email" name="Email">
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" name="Message">-->
-           <a href="./home.html">
-          <button class="w3-button w3-black w3-right w3-section" id="submit">
+          <input class="w3-input w3-border" type="text" placeholder="Message" name="Message"> -->
+          <a href="./home.html">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
-         </a> 
+          </a>
         </form>
       </div>
     </div>
@@ -126,13 +112,6 @@
   </footer>
 
   <script src="js/myscript.js"></script>
-  <script>
-            				document.getElementById('submit').onclick=function(){
-						window.custId = document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
-						document.cookie = "customerId="+custId+"";
-						//document.getElementById('myNavbar').getElementsByTagName('a')[1].click();
-					}
-  </script>
 
 </body>
 </html>

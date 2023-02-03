@@ -16,38 +16,84 @@
 <link rel="stylesheet" href="css/mystyle.css">
   
    <!--Data Layer to enable rich data collection and targeting-->
-    <script>
-     var memberLevel=['','Gold','Silver'];
-      //var digitalData =  digitalData || {};
-    window.digitalData = {
-        "page": {
-            "isLoggedIn":"logged in",
-          "member_nn":"Gold",
-          //memberLevel[Math.floor((Math.random() * 3))],
-            "pageInfo" : {
-                "pageName": "Home",
-                //"memberType":"Silver",
-                "orderId":123,
-                "cartTotal":5000
-                }
-            },
-          "cart":{
-            "cartEntries" : {
-              "p1" : 1,
-              "p2" : 3,
-              "p3" : 5
-            }
-          }
-    };
-      
- targetPageParamsAll = function() { 
-  return { 
-    "profile": { 
-        "member_nn": "Gold"
-      //memberLevel[Math.floor((Math.random() * 3))] 
-      }    
-  }; 
+   <script>
+    var memberLevel=['','Gold','Silver'];
+   var digitalData = {
+       "page": {
+           "isLoggedIn":true,
+           "member_nn":"Gold",
+         "memberLevel":memberLevel[Math.floor((Math.random() * 3))],
+           "pageInfo" : {
+               "pageName": "Home",
+               //"memberType":"Silver",
+               "orderId":123,
+               "cartTotal":5000
+               }
+           },
+         "cart":{
+           "cartEntries" : {
+             "p1" : 1,
+             "p2" : 3,
+             "p3" : 5
+           }
+         }
+   };
+     
+targetPageParamsAll = function() { 
+ return { 
+   "profile": { 
+    "member_nn":"Gold"
+       //"member_nn": memberLevel[Math.floor((Math.random() * 3))]  
+     }    
+ }; 
 }; 
+
+
+/*
+$(document).ready( function() {
+  $("#about").click(function(e){
+    $.get('about.html', function(data) {
+        $("#content").html(data);
+    });
+  }),
+  $("#contact").click(function(e){
+    $.get('contact.html', function(data) {
+        $("#content").html(data);
+    });
+  }),
+  $("#portfolio").click(function(e){
+    $.get('portfolio.html', function(data) {
+        $("#content").html(data);
+    });
+  }),
+  $("#home").click(function(e){
+    if($("#content").empty()){
+      $.get('home.html', function(data) {
+        $("#content").html("");
+    })
+    }else{
+      // $("#content").html(" ");
+      $.get('home.html', function(data) {
+        $("#content").html(data);
+    })
+    }
+    // $.get('home.html', function(data) {
+    //     $("#content").html(data);
+    // });
+  }),
+  $("#tothetop").click(function(e){
+    if($("#content").empty()){
+      $.get('home.html', function(data) {
+        $("#content").html("");
+    })
+    }else{
+      $("#content").html(" ");
+      $.get('home.html', function(data) {
+        $("#content").html(data);
+    })
+    }
+  });
+});*/
     </script>
   
     <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
@@ -98,7 +144,7 @@
   <a href = "1111.html" id = "mountains"> Mountains</a>
   <a href = "2222.html" id = "bear"> Bear</a>
   <a href = "3333.html" id = "coffeebean"> Coffee Bean</a>
-   <div class="w3-xlarge w3-section">
+  <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>

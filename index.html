@@ -48,31 +48,6 @@ targetPageParamsAll = function() {
  }; 
 }; 
 
-$('footer a#mountains').click(function(event){
-     var pf = window.location.href;
-    var eid;
-    var categoryId;
-    if(pf.indexOf('1111.html')>-1){
-    eid=1111;
-   categoryId= 'portfolio images1';
-    }
-    if(pf.indexOf('2222.html')>-1){
-    eid=2222;
-   categoryId= 'portfolio images2';
-    }
-    if(pf.indexOf('3333.html')>-1){
-    eid= 3333;
-    categoryId= 'portfolio images3';
-    }
-  adobe.target.trackEvent({
-    'mbox':'target-global-mbox',
-    'params':{
-      'profile.nnentityid':eid,
-      'profile.nncategoryid':categoryId
-    }
-    }); 
-
-})
 
   </script>
   

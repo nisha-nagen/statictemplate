@@ -18,7 +18,7 @@
    <script>
 
 
-    var memberLevel=['','Gold','Silver'];
+   var memberLevel=['','Gold','Silver'];
    var digitalData = {
        "page": {
            "isLoggedIn":true,
@@ -43,9 +43,11 @@
 targetPageParamsAll = function() { 
  return { 
    "profile": { 
-    "member_nn":"Gold"
-       //"member_nn": memberLevel[Math.floor((Math.random() * 3))]  
-     }    
+    "member_nn":"Gold",
+     "cartIds": "352,223,23432,432,553"
+     //"member_nn": memberLevel[Math.floor((Math.random() * 3))]  
+     }  
+    
  }; 
 }; 
     </script>

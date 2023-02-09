@@ -64,7 +64,9 @@ body, html {
 .dropdown:hover .dropdown-content {
   display: block;
   margin:45px 425px;
-  line-height : 5px;
+   line-height : 1px;
+  overflow: auto;
+  max-height:150px;
 }
 
 /* /.dropdown:hover {background-color: #3e8e41;} */

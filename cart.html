@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title>Static Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <script src="https://assets.adobedtm.com/6268dc4b6b26/768184ecce87/launch-ac5ef8dd50dc-development.min.js" async></script>
+  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/mystyle.css">
+
+
+
+    <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
+    <script>
+      (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+  </script> 
+  <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
+
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <!-- <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a> -->
+    
+    <a href="./home.html" id="home" class="w3-bar-item w3-button">HOME</a>
+    <a href="./about.html" id="about" class="w3-bar-item w3-button w3-hide-small changeurl"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="./portfolio.html" id="portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="./contact.html" id="contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <div class="nav-item dropdown">
+      <a href="javascript:void(0);" id="treeview" class="w3-bar-item w3-button w3-hide-small">
+        TREEVIEW <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+        
+      <div class="dropdown-content">
+          <a href="./1111.html"  id = "mountains"> Mountains</a>
+          <a href = "./2222.html" id = "bear"> Bear</a>
+          <a href = "./3333.html" id = "coffeebean"> Coffee Bean</a>
+          <a href = "./4444.html" id = "quiet"> Quiet Ocean</a>
+          <a href = "./5555.html" id = "mist"> The Mist</a>
+          <a href = "./6666.html" id = "Typewriter"> My Typewriter</a>
+          <a href = "./7777.html" id = "train"> Empty Train</a>
+          <a href = "./8888.html" id = "sea"> Sail in the Sea</a>
+          <a href = "./9999.html" id = "Hat"> Girl with the Hat</a>
+          <a href = "./100.html" id = "parallex1"> Hampi</a>
+          <a href = "./200.html" id = "parallex2">Jog Falls</a>
+          <a href = "./300.html" id = "parallex3"> Lalbagh Glass House</a>
+      </div>
+  </div>
+
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+    <a href="./cart.html" class="w3-bar-item w3-button w3-hide-small w3-right" id="cart"> 
+        <i class="fa fa-shopping-cart"></i> Cart</a>
+  </div>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="./home.html" id="home" class="w3-bar-item w3-button">HOME</a>
+    <a href="./about.html" id="about" class="w3-bar-item w3-button changeurl" >ABOUT</a>
+    <a href="./portfolio.html" id="portfolio" class="w3-bar-item w3-button" >PORTFOLIO</a>
+    <a href="./contact.html" id="contact" class="w3-bar-item w3-button" >CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div> 
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">Cart Page!</h3>
+</div>
+
+<!-- <script src="js/myscript.js"></script> -->
+</body>
+</html>
